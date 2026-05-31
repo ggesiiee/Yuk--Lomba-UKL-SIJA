@@ -1,0 +1,350 @@
+:root {
+  --primary-color: #1c7fff;
+  --secondary-color: #005ed8;
+  --background-color: #f0f2f5;
+  --surface-color: #92c8ff;
+  --dark: #1e1e1e;
+  --gray: #777;
+  --white: #ffffff;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--primary-color);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 27% 0px 30%;
+  justify-content: center;
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  background-position-y: -50px;
+  background-repeat: no-repeat;
+}
+
+.hero .content {
+  max-width: 34rem;
+  margin-top: 50px;
+}
+
+.hero .content h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: var(--background-color) 2px 2px 4px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.hero .content span {
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  color: #177cffcf;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.hero .content p {
+  border-radius: 30px;
+  background: rgba(254, 254, 254, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 11rem;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 100px;
+  font-weight: 700;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cta:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+  transform: translateY(-3px);
+  box-shadow: var(--primary-color) 0px 0px 100px;
+}
+
+.fitur {
+  padding: 50px 10%;
+}
+
+.fitur h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+  margin: 2rem 0;
+  border: 1px solid var(--gray);
+  border-radius: 30px;
+  padding: 12px;
+  margin-left: 450px;
+}
+
+.fitur h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.konten-deskripsi {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.konten-deskripsi p {
+  flex: 1;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gambar-about {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps {
+  padding: 50px 10%;
+}
+
+.steps h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.steps h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+  margin: 2rem 0;
+  border: 1px solid var(--gray);
+  border-radius: 30px;
+  padding: 12px 26px;
+  margin-left: 470px;
+}
+
+.konten-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.konten-steps p {
+  flex: 1;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.gambar-steps {
+  width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.daftar-fitur-kanan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-fitur {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-fitur .ikon-biru {
+  color: #1c7fff;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.item-fitur span {
+  color: #1c7fff;
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.panduan-section {
+  background-color: var(--primary-color);
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.badge-container {
+  margin-bottom: 20px;
+}
+
+.badge-panduan {
+  position: relative;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  margin: 2rem 0;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  padding: 12px 26px;
+}
+
+.judul-panduan {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-langkah {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kartu-langkah {
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.kartu-langkah:hover {
+  transform: translateY(-5px);
+}
+
+.nomor-langkah {
+  color: #1c7fff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.sub-judul-langkah {
+  color: #1c7fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.desc-langkah {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-utama {
+  background-color: #1c7fff; 
+  color: #ffffff;
+  padding: 60px 80px 40px 80px;
+  border-radius: 60px 60px 0 0; 
+  font-family: "Nunito", sans-serif;
+  margin-top: 100px; 
+}
+
+.footer-konten-atas {
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ikon-tropi {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2.5px;
+}
+
+.nama-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.footer-deskripsi {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 450px;
+  opacity: 0.9;
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 30px;
+}
+
+.footer-konten-bawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.copyright,
+.developer {
+  margin: 0;
+  opacity: 0.8;
+}

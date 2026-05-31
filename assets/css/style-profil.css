@@ -1,0 +1,138 @@
+.header-pengaturan-akun {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--surface-white);
+  padding: 15px 25px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  margin-bottom: 15px;
+}
+
+.header-pengaturan-akun h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--dark, #1e293b);
+  margin: 0;
+}
+
+.kotak-profil-utama {
+  flex: 1;
+}
+
+.konten-profil-utama {
+  padding: 10px 0;
+}
+
+.info-atas-profil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.foto-profil-besar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  object-fit: cover;
+  background-color: #f1f5f9;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.teks-nama-profil h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 5px;
+}
+
+.teks-nama-profil p {
+  color: #64748b;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.layout-profil-grid {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.kolom-edit-profil {
+  flex: 2;
+}
+
+.judul-detail-informasi {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 10px;
+}
+
+.form-grup-profil {
+  margin-bottom: 15px;
+}
+
+.form-grup-profil label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.input-profil {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: #f8fafc;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+  box-sizing: border-box;
+}
+
+.input-profil:focus {
+  border-color: var(--primary-color);
+  background-color: #ffffff;
+}
+
+.btn-simpan-profil {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn-simpan-profil:hover {
+  background-color: var(--secondary-color);
+}
+
+.bungkus-semua {
+  height: auto !important;
+  min-height: 100vh;
+  overflow: visible !important;
+}
+
+.isi-konten-kanan {
+  overflow-y: visible !important;
+  height: auto !important;
+}
+
+body {
+  overflow-y: auto !important;
+}

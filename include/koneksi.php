@@ -1,11 +1,12 @@
 <?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "ukl_lomba";
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if (!$conn) {
+ die("Koneksi database gagal: " . $conn->connect_error);
+}
 ?>
-Something is wrong with the XAMPP installation :-(

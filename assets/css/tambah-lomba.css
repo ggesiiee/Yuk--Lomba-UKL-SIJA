@@ -1,0 +1,303 @@
+:root {
+  --primary-color: #1c7fff;
+  --secondary-color: #005ed8;
+  --background-color: #f8fafc;
+  --surface-white: #ffffff;
+  --surface-color: #bedeff;
+  --dark: #1e293b;
+  --gray: #64748b;
+}
+
+.header-halaman-lomba {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--surface-white);
+  padding: 15px 25px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  margin-bottom: 15px;
+}
+
+/* --- BAGIAN KIRI --- */
+.header-detail-spesifik {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrapper-judul-kiri {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.judul-halaman-teks {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--dark, #1e293b);
+  margin: 0;
+}
+
+.tombol-kembali {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  background: white;
+  transition: 0.3s;
+}
+
+.tombol-kembali:hover {
+  background: #f1f5f9;
+  color: var(--primary-color, #1c7fff);
+}
+
+/* Area Form */
+.area-form {
+  margin-top: 20px;
+  max-width: 900px;
+}
+.kartu-form {
+  background: var(--surface-white);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+.dua-kolom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.input-grup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-grup label {
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 1rem;
+}
+.input-grup input,
+.input-grup select,
+.input-grup textarea {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #e0e6ed;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  transition: 0.3s;
+}
+.input-grup input:focus,
+.input-grup select:focus,
+.input-grup textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(28, 127, 255, 0.1);
+}
+
+/* Custom File Upload */
+.custom-file-upload input {
+  display: none;
+}
+.area-drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px dashed var(--surface-color);
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--gray);
+  transition: 0.3s;
+}
+.area-drop:hover {
+  background: #f8fbff;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Tombol */
+.baris-tombol {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+.btn-batal {
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-simpan {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(28, 127, 255, 0.3);
+}
+.btn-simpan:hover {
+  background: var(--secondary-color);
+}
+
+/* =========================================
+   TAMBAHAN STYLE UNTUK FITUR BARU 
+   (Radio, Anggota, Guru, Alert) 
+========================================= */
+.opsi-radio {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 100%;
+}
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.radio-label input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.area-anggota,
+.area-guru {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.foto-anggota {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e0e6ed;
+}
+.btn-tambah-anggota {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1.5px dashed var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-cari-guru {
+  background: #f1f5f9;
+  color: var(--dark);
+  border: 1.5px solid #e0e6ed;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.alert-sukses {
+  background: #dcfce7;
+  color: #166534;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.alert-gagal {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+/* RESPONSIF UNTUK FORM TAMBAH LOMBA */
+@media (max-width: 768px) {
+  .dua-kolom {
+    flex-direction: column; /* Baris jadi kolom (atas-bawah) */
+    gap: 0;
+  }
+
+  .input-grup {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .kartu-form {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .baris-tombol {
+    flex-direction: column-reverse; /* Tombol batal di bawah, simpan di atas */
+    gap: 10px;
+  }
+
+  .btn-simpan,
+  .btn-batal {
+    width: 100%; /* Tombol lebar penuh agar mudah diklik jempol */
+    justify-content: center;
+  }
+
+  .bagian-atas-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Sembunyikan input asli tapi tetap bisa diakses label */
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Tambahkan efek hover agar user tahu ini bisa diklik */
+.area-drop {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.area-drop:hover {
+  background-color: #f8fafc;
+  border-color: #3b82f6;
+}
+
+/* Style tambahan saat file terpilih (nanti diaktifkan via JS) */
+.area-drop.file-terpilih {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+  color: #065f46;
+}
