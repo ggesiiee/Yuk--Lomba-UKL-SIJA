@@ -34,7 +34,6 @@ body {
   background-color: var(--white);
 }
 
-/* --- Left Side (Image Area) --- */
 .left-side {
   flex: 1;
   position: relative;
@@ -130,7 +129,6 @@ body {
   border-radius: 6px;
 }
 
-/* --- Right Side (Form Area) --- */
 .right-side {
   flex: 1;
   display: flex;
@@ -165,7 +163,6 @@ body {
   font-size: 15px;
 }
 
-/* Toggle Sign In / Sign Up */
 .auth-toggle {
   display: flex;
   background-color: #f1f5f9;
@@ -210,7 +207,6 @@ body {
   position: relative;
 }
 
-/* Mempercantik Input Fields */
 .form-control {
   width: 100%;
   padding: 14px 16px;
@@ -231,7 +227,6 @@ body {
   box-shadow: 0 0 0 4px var(--surface-color); 
 }
 
-/* --- FIX UNTUK DROPDOWN ROLE --- */
 select.form-control {
   appearance: none; 
   -webkit-appearance: none;
@@ -262,42 +257,6 @@ select.form-control:focus {
   color: var(--primary-color);
 }
 
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  font-size: 13.5px;
-}
-
-.remember-me {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-muted);
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.remember-me input {
-  accent-color: var(--primary-color);
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.forgot-password {
-  color: var(--primary-color);
-  font-weight: 700;
-  transition: color 0.3s;
-}
-
-.forgot-password:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Tombol Login */
 .btn-login {
   width: 100%;
   padding: 15px;
@@ -322,27 +281,6 @@ select.form-control:focus {
   box-shadow: 0 2px 8px rgba(28, 127, 255, 0.3);
 }
 
-.divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 30px 0;
-  color: var(--text-muted);
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.divider::before,
-.divider::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.divider span {
-  padding: 0 15px;
-}
-
 .register-link {
   text-align: center;
   margin-top: 35px;
@@ -351,19 +289,6 @@ select.form-control:focus {
   font-weight: 600;
 }
 
-.register-link a {
-  color: var(--primary-color);
-  font-weight: 800;
-  margin-left: 5px;
-  transition: color 0.3s;
-}
-
-.register-link a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Responsive */
 @media (max-width: 992px) {
   .left-side {
     display: none;

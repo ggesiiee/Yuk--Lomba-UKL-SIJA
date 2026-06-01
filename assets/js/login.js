@@ -1,4 +1,3 @@
-// 1. Fitur Toggle Password
 const togglePassword = document.getElementById("togglePassword");
 const passwordInput = document.getElementById("password");
 
@@ -11,7 +10,6 @@ if (togglePassword && passwordInput) {
   });
 }
 
-// 2. Fungsi Switch Login / Register
 function switchTab(tab) {
   const btnlogin = document.getElementById("btn-login");
   const btnSignUp = document.getElementById("btn-signup");
@@ -60,8 +58,6 @@ function switchTab(tab) {
   }
 }
 
-// 3. LOGIC UTAMA: Menjalankan tab otomatis dari Navbar
-// Bagian ini HARUS DI LUAR fungsi switchTab agar jalan otomatis saat page load
 window.addEventListener("load", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const tabParam = urlParams.get("tab");
@@ -73,7 +69,6 @@ window.addEventListener("load", function () {
   }
 });
 
-// 4. Slider Background
 const images = [
   "../assets/img/header-bg.png",
 ];

@@ -44,9 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['simpan_edit'])) {
     }
 }
 
-// ======================================================================
-// 2. MENGAMBIL DATA LOMBA UNTUK DITAMPILKAN DI FORM
-// ======================================================================
 $q_lomba = mysqli_query($conn, "SELECT * FROM lomba WHERE lomba_id = $id_lomba");
 if (!$q_lomba || mysqli_num_rows($q_lomba) == 0) {
     echo "<script>alert('Data lomba tidak ditemukan!'); window.location.href='../user/lomba.php';</script>";
@@ -54,7 +51,6 @@ if (!$q_lomba || mysqli_num_rows($q_lomba) == 0) {
 }
 $dt_lomba = mysqli_fetch_assoc($q_lomba);
 
-// Mengamankan nilai status_daftar untuk keperluan checked di HTML dan kemunculan tombol progress
 $status_database = isset($dt_lomba['status_daftar']) ? $dt_lomba['status_daftar'] : 'belum';
 
 ?>
@@ -77,9 +73,9 @@ $status_database = isset($dt_lomba['status_daftar']) ? $dt_lomba['status_daftar'
         .header-detail-spesifik {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Menjauhkan tombol kembali & progress */
+            justify-content: space-between; 
             width: 100%;
-            max-width: 800px; /* Sesuai lebar form */
+            max-width: 800px;
         }
 
         .wrapper-judul-kiri {
@@ -113,7 +109,6 @@ $status_database = isset($dt_lomba['status_daftar']) ? $dt_lomba['status_daftar'
             color: var(--primary-color, #1c7fff);
         }
 
-        /* Style Tombol Progress */
         .btn-progress { 
             background-color: #10b981; 
             color: white; 

@@ -552,15 +552,13 @@ if ($lomba_aktif) {
                         $poster_path = !empty($row['poster']) ? "../assets/uploads/img/" . $row['poster'] : "../assets/uploads/img/default-poster.jpeg";
                         $biaya_txt = $row['biaya_pendaftaran'] == 0 ? "Gratis" : "Rp " . number_format($row['biaya_pendaftaran'], 0, ',', '.');
                         
-                        // PERBAIKAN TANGGAL: Cek nilai kosong agar tidak 01 Jan 1970
                         $deadline_cek = $row['deadline'];
                         if (!empty($deadline_cek) && $deadline_cek != '0000-00-00') {
                             $deadline_reg = date('d M Y', strtotime($deadline_cek));
                         } else {
-                            $deadline_reg = 'TBA'; // Menampilkan 'TBA' jika tanggal belum diisi
+                            $deadline_reg = 'TBA';
                         }
 
-                        // Cek apakah user sedang aktif mengikuti lomba ini
                         $id_lomba_cek = $row['lomba_id'];
                         $status_ikut = mysqli_query($conn, "SELECT status FROM pendaftaran WHERE user_id = '$user_id_aktif' AND lomba_id = '$id_lomba_cek' LIMIT 1");
                         $sudah_daftar = (mysqli_num_rows($status_ikut) > 0);

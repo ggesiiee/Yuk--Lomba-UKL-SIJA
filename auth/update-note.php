@@ -6,7 +6,6 @@ if (isset($_POST['id']) && isset($_POST['status'])) {
     $note_id = intval($_POST['id']);
     $status = intval($_POST['status']);
 
-    // Jika selesai (1) catat tanggal hari ini, jika batal selesai (0) kosongkan tanggal
     if ($status == 1) {
         $query = "UPDATE notes SET status = 1, tanggal_selesai = CURDATE() WHERE note_id = $note_id";
     } else {

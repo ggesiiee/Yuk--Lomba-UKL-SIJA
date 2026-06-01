@@ -173,7 +173,6 @@ $foto_tampil = !empty($user['foto']) ? $user['foto'] : 'photo-default.jpg';
   </div>
 
   <script>
-  // Fungsi untuk menampilkan preview foto profil
   function previewImage(event) {
     const file = event.target.files;
     
@@ -181,10 +180,8 @@ $foto_tampil = !empty($user['foto']) ? $user['foto'] : 'photo-default.jpg';
       const reader = new FileReader();
       
       reader.onload = function(e) {
-        // Mencari elemen gambar (pastikan class gambar profilmu adalah 'foto-profil')
         const imgPreview = document.querySelector('.preview-foto');
         
-        // Mengganti sumber gambar (src) dengan file yang baru dipilih
         if (imgPreview) {
           imgPreview.src = e.target.result;
         }
@@ -194,7 +191,6 @@ $foto_tampil = !empty($user['foto']) ? $user['foto'] : 'photo-default.jpg';
     }
   }
 
-  // Menjalankan Icon Feather (biarkan bawaan aslimu tetap ada)
   feather.replace();
 </script>
 </body>

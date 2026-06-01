@@ -58,7 +58,6 @@ function bukaModalEditTimeline(id, step, status, createdAt) {
 
   document.getElementById("edit_created_at").value = createdAt;
 
-  // Tampilkan modal
   document.getElementById("modalEditTimeline").style.display = "flex";
 }
 
