@@ -582,6 +582,18 @@ if ($lomba_aktif) {
                                 </h3>
 
                                 <p class="user-lomba-desc"><?= !empty($row['deskripsi']) ? htmlspecialchars($row['deskripsi']) : 'Tidak ada deskripsi detail.' ?></p>
+
+                                <?php 
+                                if (!empty($row['link_lomba'])): 
+                                    $url_tujuan = trim($row['link_lomba']);
+                                    if (!preg_match("~^(?:f|ht)tps?://~i", $url_tujuan)) {
+                                        $url_tujuan = "https://" . $url_tujuan;
+                                    }
+                                ?>
+                                    <a href="<?= htmlspecialchars($url_tujuan) ?>" target="_blank" class="btn-link-lomba" style="display: inline-flex; align-items: center; gap: 5px; margin-top: 10px; color: #1c7fff; text-decoration: none; font-weight: bold; font-size: 0.9rem;" title="Kunjungi Situs Resmi Lomba">
+                                        <i data-feather="external-link" style="width: 16px; height: 16px;"></i> Kunjungi Link Lomba
+                                    </a>
+                                <?php endif; ?>
                             </div>
 
                             <div class="user-lomba-meta">
