@@ -1,0 +1,71 @@
+.cari-user input {
+  transition: all 0.3s ease;
+}
+
+.cari-user input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(28, 127, 255, 0.1);
+  width: 300px;
+}
+
+.btn-tambah-admin {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-tambah-admin:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.btn-aksi {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-edit {
+  background-color: #e0f2fe;
+  color: #0ea5e9;
+  margin-right: 5px;
+}
+
+.btn-edit:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.btn-hapus {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.btn-hapus:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.text-muted {
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.tabel-admin td strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
