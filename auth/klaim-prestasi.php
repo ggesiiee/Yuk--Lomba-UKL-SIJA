@@ -276,7 +276,7 @@ body {
             </div>
 
             <div class="claim-actions">
-                <a href="home.php" class="btn-claim-cancel">Batal</a>
+                <a href="../user/home.php" class="btn-claim-cancel">Batal</a>
                 <button type="submit" name="kirim_klaim" class="btn-claim-submit">
                     <i data-feather="check"></i>Kirim Laporan
                 </button>
