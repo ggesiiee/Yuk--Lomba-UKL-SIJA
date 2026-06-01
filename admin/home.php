@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['batal_pelacakan'])) {
     $tabel_sumber = $_POST['tabel_sumber'];
     
     if ($tabel_sumber == 'pendaftaran') {
-        mysqli_query($conn, "UPDATE pendaftaran SET status = 'pending' WHERE pendaftaran_id = '$id_record'");
+        mysqli_query($conn, "UPDATE pendaftaran SET status = 'Menunggu Pengecekan' WHERE pendaftaran_id = '$id_record'");
     } else if ($tabel_sumber == 'klaim_prestasi') {
         mysqli_query($conn, "UPDATE klaim_prestasi SET status_validasi = 'Menunggu Pengecekan' WHERE klaim_id = '$id_record'");
     }
