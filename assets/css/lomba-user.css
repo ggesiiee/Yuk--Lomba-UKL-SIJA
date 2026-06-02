@@ -290,6 +290,26 @@
   background: var(--secondary-color);
 }
 
+.btn-klaim {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-klaim:hover {
+  background: var(--primary-color);
+  color: var(--surface-white);
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(28, 127, 255, 0.2);
+}
+
 .btn-aksi {
   border-radius: 10px;
   width: 45px;
