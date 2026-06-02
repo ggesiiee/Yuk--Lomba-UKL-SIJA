@@ -155,12 +155,12 @@ $foto_tampil = !empty($user['foto']) ? $user['foto'] : 'photo-default.jpg';
 
                             <div class="form-grup-profil">
                                 <label>Kelas</label>
-                                <input type="text" name="kelas" class="input-profil" value="<?= htmlspecialchars($user['kelas'] ?? '') ?>" placeholder="Contoh: XII RPL 1">
+                                <input type="text" name="kelas" class="input-profil" value="<?= htmlspecialchars($user['kelas'] ?? '') ?>" placeholder="Contoh: X SIJA 2">
                             </div>
 
                             <div class="form-grup-profil">
                                 <label>Asal Sekolah</label>
-                                <input type="text" name="sekolah" class="input-profil" value="<?= htmlspecialchars($user['sekolah'] ?? '') ?>" placeholder="Contoh: SMKN 1 Surabaya">
+                                <input type="text" name="sekolah" class="input-profil" value="<?= htmlspecialchars($user['sekolah'] ?? '') ?>" placeholder="Contoh: SMK Telkom Sidoarjo">
                             </div>
 
                             <button type="submit" class="btn-simpan-profil">Simpan Perubahan</button>
